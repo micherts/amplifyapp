@@ -1,26 +1,26 @@
 {
   "auth": {
-    "amplifyappc1376e70": {
+    "amplifyapp720ac735": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
-      "customAuth": false
-    },
-    "userPoolGroups": {
-      "service": "Cognito-UserPool-Groups",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "auth",
-          "resourceName": "amplifyappc1376e70",
-          "attributes": [
-            "UserPoolId",
-            "AppClientIDWeb",
-            "AppClientID",
-            "IdentityPoolId"
-          ]
-        }
-      ]
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanism": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      }
     }
   }
 }

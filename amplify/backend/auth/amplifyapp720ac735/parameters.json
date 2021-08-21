@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "amplifyappc1376e70_identitypool_c1376e70",
+    "identityPoolName": "amplifyapp720ac735_identitypool_720ac735",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "amplifc1376e70",
-    "userPoolName": "amplifyappc1376e70_userpool_c1376e70",
+    "resourceNameTruncated": "amplif720ac735",
+    "userPoolName": "amplifyapp720ac735_userpool_720ac735",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -20,7 +20,9 @@
     "requiredAttributes": [
         "email"
     ],
-    "aliasAttributes": [],
+    "aliasAttributes": [
+        "email"
+    ],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
@@ -29,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "amplifc1376e70_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amplif720ac735_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "c1376e70",
-    "resourceName": "amplifyappc1376e70",
+    "sharedId": "720ac735",
+    "resourceName": "amplifyapp720ac735",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,22 +48,9 @@
             "Arn"
         ]
     },
-    "useDefault": "manual",
-    "userPoolGroupList": [
-        "UserPoolGroup"
-    ],
+    "useDefault": "default",
+    "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": [],
-    "thirdPartyAuth": false,
-    "userPoolGroups": true,
-    "adminQueries": false,
-    "triggers": "{}",
-    "hostedUI": false,
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "breakCircularDependency": true,
-    "permissions": [],
-    "authProviders": []
+    "dependsOn": []
 }
